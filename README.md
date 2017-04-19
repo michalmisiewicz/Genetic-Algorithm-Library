@@ -12,7 +12,7 @@ ga.enableMutation(0.10);
 ga.run();
 ```
 ###
-#### Do poprawnego działąnia algorytmu należy zaimplementować interfejs CallableWithArgument liczący współczynnik przystosowania osobnika
+#### Do poprawnego działania algorytmu należy zaimplementować interfejs CallableWithArgument liczący współczynnik przystosowania osobnika
 ```java
 private static CallableWithArgument<Double, Chromosome> evaluateFitness = (chromosome) ->
 {
