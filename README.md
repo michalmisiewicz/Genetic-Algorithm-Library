@@ -23,7 +23,7 @@ private static CallableWithArgument<Double, Chromosome> evaluateFitness = (chrom
 ```
 ###
 ### Przykład użycia algorytmu
-#### Problem szeregowania zbioru N symulacji na klastrze M komputerów
+#### Problem szeregowania zbioru N symulacji na klastrze składających się M komputerów
 ```java
 public class Test
 {
@@ -60,10 +60,6 @@ public class Test
         ga.run();
     }
 
-    /**
-     * Poglądowa implementacja funkcji obliczjacacej wartość funkcji przetrwania.
-     * Muszę tu jeszcze kilka rzeczy dorobić
-     */
     private static CallableWithArgument<Double, Chromosome> evaluateFitness = (chromosome) ->
     {
             List<Gene> genome = chromosome.getGenome();
@@ -120,20 +116,7 @@ public class Simulation
     private int ramUsage;
     private int duration;
 
-    public int getId()
-    {
-        return id;
-    }
-
-    public int getRamUsage()
-    {
-        return ramUsage;
-    }
-
-    public int getDuration()
-    {
-        return duration;
-    }
+    ...
 
     public Simulation(int id, int ramUsage, int duration)
     {
