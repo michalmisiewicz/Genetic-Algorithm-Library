@@ -48,8 +48,6 @@ public class Test
         }
 
         Population population = new Population(10, simulationList, computerList);
-
-        // Generujemy losową populajce
         population.generatePopulation();
 
         GeneticAlgorithm ga = new GeneticAlgorithm(population, evaluateFitness);
